@@ -1,9 +1,9 @@
 runtime: nodejs16
 
 handlers:
-  - url: /styles
-    static_dir: styles
+  - url: www/styles
+    static_dir: www/styles
 
   - url: /
-    static_files: index.html
-    upload: index.html
+    static_files: www/index.html
+    upload: www/index.html
