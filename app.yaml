@@ -1,9 +1,13 @@
 runtime: nodejs16
 
 handlers:
-  - url: www/styles
-    static_dir: www/styles
+  - url: task-dicoding-gcp/styles
+    static_dir: task-dicoding-gcp/styles
 
   - url: /
-    static_files: www/index.html
-    upload: www/index.html
+    static_files: task-dicoding-gcp/index.html
+    upload: task-dicoding-gcp/index.html
+    
+  - url: /(.*)
+    static_files: task-dicoding-gcp/\1
+    upload: task-dicoding-gcp/(.*)
